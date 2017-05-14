@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="sort_by_popularity">Sort By : Most Popular</string>
+    <string name="sort_by_rating">Sort By : Highest Rated</string>
+    <string name="detail_page">Movie Detail</string>
+    <string name="error_message">Request Failed... Please Retry Again</string>
+    <string name="internet_fail">Internet Problem...Please Connect the Internet</string>
+    <string name="save_movies">Saved Movies</string>
+    <string name="overview">Overview</string>
+    <string name="release_date">Release Date</string>
+    <string name="review_author">Review Author</string>
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="empty">No Review</string>
+
+
+    <string name="review">Review</string>
+</resources>
