@@ -1,9 +1,9 @@
 package com.unicornheight.popularmovie2.datamap;
 
+import com.unicornheight.popularmovie2.data.MovieStorage;
 import com.unicornheight.popularmovie2.mvp.model.Review;
 import com.unicornheight.popularmovie2.mvp.model.ReviewResponse;
 import com.unicornheight.popularmovie2.mvp.model.ReviewResponseResults;
-import com.unicornheight.popularmovie2.mvp.model.Storage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,8 @@ public class ReviewMapper {
     @Inject
     public ReviewMapper() {
     }
-    public List<Review> mapMoviesReview(Storage storage, ReviewResponse response) {
+
+    public List<Review> mapMoviesReview(MovieStorage storage, ReviewResponse response) {
         List<Review> trailerList = new ArrayList<>();
 
         if (response != null) {

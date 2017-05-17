@@ -1,9 +1,9 @@
 package com.unicornheight.popularmovie2.datamap;
 
+import com.unicornheight.popularmovie2.data.MovieStorage;
 import com.unicornheight.popularmovie2.mvp.model.Movie;
 import com.unicornheight.popularmovie2.mvp.model.MovieResponse;
 import com.unicornheight.popularmovie2.mvp.model.MovieResponseResults;
-import com.unicornheight.popularmovie2.mvp.model.Storage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,8 @@ public class MovieMapper {
     @Inject
     public MovieMapper() {
     }
-    public List<Movie> mapMovies(Storage storage, MovieResponse response) {
+
+    public List<Movie> mapMovies(MovieStorage movieStorage, MovieResponse response) {
         List<Movie> movieList = new ArrayList<>();
 
         if (response != null) {
@@ -33,7 +34,7 @@ public class MovieMapper {
                     myMovie.setPopularity(movie.getPopularity());
                     myMovie.setVote_average(movie.getVote_average());
                     myMovie.setPoster_path(movie.getPoster_path());
-                    storage.addMovie(myMovie);
+                    movieStorage.addMovie(myMovie);
                     movieList.add(myMovie);
                 }
             }

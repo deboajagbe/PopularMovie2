@@ -2,10 +2,10 @@ package com.unicornheight.popularmovie2.mvp.presenter;
 
 import com.unicornheight.popularmovie2.api.MovieApiService;
 import com.unicornheight.popularmovie2.base.BasePresenter;
+import com.unicornheight.popularmovie2.data.MovieStorage;
 import com.unicornheight.popularmovie2.datamap.ReviewMapper;
 import com.unicornheight.popularmovie2.mvp.model.Review;
 import com.unicornheight.popularmovie2.mvp.model.ReviewResponse;
-import com.unicornheight.popularmovie2.mvp.model.Storage;
 import com.unicornheight.popularmovie2.mvp.view.DetailView;
 
 import java.util.List;
@@ -26,7 +26,8 @@ public class DetailPresenter extends BasePresenter<DetailView> implements Observ
     @Inject
     protected MovieApiService mApiService;
     @Inject protected ReviewMapper mReviewMapper;
-    @Inject protected Storage mStorage;
+    @Inject
+    protected MovieStorage mStorage;
 
 
     @Inject

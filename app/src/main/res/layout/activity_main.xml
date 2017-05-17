@@ -6,13 +6,13 @@
         android:orientation="vertical"
         android:background="@android:color/white"
         tools:context=".modules.home.MainActivity"
-        tools:padding="4dp">
+        tools:padding="@dimen/smaller_padding">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/movie_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp"
+            android:padding="@dimen/extra_small"
             android:scrollbars="vertical" />
 
     <TextView

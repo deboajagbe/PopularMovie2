@@ -20,12 +20,12 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.unicornheight.popularmovie2.R;
 import com.unicornheight.popularmovie2.api.MovieApiService;
 import com.unicornheight.popularmovie2.base.BaseActivity;
+import com.unicornheight.popularmovie2.data.MovieStorage;
 import com.unicornheight.popularmovie2.di.components.DaggerDetailComponent;
 import com.unicornheight.popularmovie2.di.modules.DetailModule;
 import com.unicornheight.popularmovie2.helper.ImageHandler;
 import com.unicornheight.popularmovie2.mvp.model.Movie;
 import com.unicornheight.popularmovie2.mvp.model.Review;
-import com.unicornheight.popularmovie2.mvp.model.Storage;
 import com.unicornheight.popularmovie2.mvp.presenter.DetailPresenter;
 import com.unicornheight.popularmovie2.mvp.view.DetailView;
 import com.unicornheight.popularmovie2.utilities.NetworkUtils;
@@ -35,7 +35,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import butterknife.Bind;
-import rx.Observable;
 
 /**
  * Created by deboajagbe on 5/10/17.
@@ -49,7 +48,8 @@ public class DetailActivity extends BaseActivity implements DetailView {
     protected DetailPresenter mPresenter;
     @Inject
     protected MovieApiService mApiService;
-    @Inject protected Storage mStorage;
+    @Inject
+    protected MovieStorage mStorage;
     @Inject
     Context context;
 
@@ -91,8 +91,8 @@ public class DetailActivity extends BaseActivity implements DetailView {
     }
 
     private void updateFavorite(long movie_id){
-        Storage storage = new Storage(this);
-        int value = storage.updateFavourite(movie_id);
+        MovieStorage storage = new MovieStorage(this);
+        int value = storage.UpdateFavourite(movie_id);
         if(value == 1){
             mMovieLike.setImageResource(R.mipmap.ic_toolbar_like_p);
         } else {
@@ -100,7 +100,7 @@ public class DetailActivity extends BaseActivity implements DetailView {
         }
     }
     private void checkIfFavorite(long movie_id) {
-        Storage storage = new Storage(this);
+        MovieStorage storage = new MovieStorage(this);
         long result = storage.checkFavouriteStatus(movie_id);
         if (result == 1) {
             mMovieLike.setImageResource(R.mipmap.ic_toolbar_like_p);

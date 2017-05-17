@@ -21,6 +21,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".modules.details.DetailActivity" android:theme="@style/AppDeTheme" />
+
+        <provider
+            android:authorities="com.unicornheight.popularmovie2"
+            android:name="com.unicornheight.popularmovie2.data.MovieContentProvider"
+            android:exported="false" />
     </application>
 
 </manifest>

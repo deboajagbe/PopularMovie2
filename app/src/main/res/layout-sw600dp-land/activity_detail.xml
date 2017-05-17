@@ -146,16 +146,16 @@
                         android:id="@+id/tableHeaderImage"
                         android:layout_width="0dp"
                         android:background="@color/colorPrimaryLight"
-                        android:layout_height="18dp"
+                        android:layout_height="@dimen/title_head"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginLeft="@dimen/large_padding"
+                        android:layout_marginRight="@dimen/large_padding"
+                        android:layout_marginTop="@dimen/extra_large"
                         app:layout_constraintTop_toBottomOf="@+id/ratings"
                         app:layout_constraintHorizontal_bias="0.33"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp" />
+                        android:layout_marginStart="@dimen/large_padding"
+                        android:layout_marginEnd="@dimen/large_padding" />
 
 
                     <ImageView
@@ -165,8 +165,8 @@
                         android:layout_height="0dp"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="@dimen/large_padding"
+                        android:layout_marginRight="@dimen/large_padding"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tableHeaderImage" />
 
@@ -175,35 +175,35 @@
                     <TextView
                         android:id="@+id/reviewAuthorLabel"
                         android:layout_width="wrap_content"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginLeft="@dimen/larger_padding"
                         android:textColor="@color/white"
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                         app:layout_constraintTop_toTopOf="@+id/tableHeaderImage"
                         app:layout_constraintLeft_toLeftOf="@+id/tableHeaderImage"
                         android:layout_height="wrap_content"
                         android:text="@string/review_author"
-                        android:layout_marginStart="16dp" />
+                        android:layout_marginStart="@dimen/larger_padding" />
 
                     <TextView
                         android:id="@+id/reviewContentLabel"
                         android:layout_width="wrap_content"
                         android:textColor="@color/white"
-                        android:layout_marginLeft="42dp"
+                        android:layout_marginLeft="@dimen/extra_larger"
                         android:text="@string/review"
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                         app:layout_constraintTop_toTopOf="@+id/tableHeaderImage"
                         app:layout_constraintLeft_toRightOf="@+id/reviewAuthor"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="42dp" />
+                        android:layout_marginStart="@dimen/extra_larger" />
 
                     <TextView
                         android:id="@+id/reviewAuthor"
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorPrimary"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="16dp"
-                        android:paddingRight="32dp"
-                        android:paddingBottom="16dp"
+                        android:paddingTop="@dimen/large_padding"
+                        android:paddingLeft="@dimen/larger_padding"
+                        android:paddingRight="@dimen/extra_large"
+                        android:paddingBottom="@dimen/larger_padding"
                         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
                         app:layout_constraintTop_toTopOf="@+id/tableImage"
                         app:layout_constraintLeft_toLeftOf="@+id/reviewAuthorLabel"
@@ -216,10 +216,10 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorPrimary"
                         tools:text="@string/review"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="16dp"
-                        android:paddingRight="32dp"
-                        android:paddingBottom="16dp"
+                        android:paddingTop="@dimen/large_padding"
+                        android:paddingLeft="@dimen/larger_padding"
+                        android:paddingRight="@dimen/extra_large"
+                        android:paddingBottom="@dimen/larger_padding"
                         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
                         app:layout_constraintTop_toTopOf="@+id/tableImage"
                         app:layout_constraintLeft_toLeftOf="@+id/reviewContentLabel"

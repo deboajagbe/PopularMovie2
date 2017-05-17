@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin">12dp</dimen>
     <dimen name="detail_image_height">260dp</dimen>
     <dimen name="detail_play_icon_height">45dp</dimen>
     <dimen name="detail_play_icon_width">45dp</dimen>
+    <dimen name="large_padding">8dp</dimen>
+    <dimen name="expandableTitle">10dp</dimen>
+    <dimen name="medium_padding">6dp</dimen>
+    <dimen name="smaller_padding">4dp</dimen>
+    <dimen name="extra_small">2dp</dimen>
+    <dimen name="play_padding">3dp</dimen>
+    <dimen name="larger_padding">16dp</dimen>
+    <dimen name="title_head">18dp</dimen>
+    <dimen name="extra_large">32dp</dimen>
+    <dimen name="extra_larger">42dp</dimen>
+    <dimen name="radius">5dp</dimen>
 </resources>
